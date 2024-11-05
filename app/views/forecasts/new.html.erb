@@ -1,0 +1,8 @@
+<h1>Weather Forecast</h1>
+<%= flash[:alert] %>
+<%= form_with url: forecasts_path, method: :post, local: true do %>
+  <label for="address">Enter Address:</label>
+  <%= text_field_tag :address %>
+  <%= submit_tag "Submit" %>
+<% end %>
+
