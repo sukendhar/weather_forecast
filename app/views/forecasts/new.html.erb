@@ -2,7 +2,7 @@
 <%= flash[:alert] %>
 <%= form_with url: forecasts_path, method: :post, local: true do %>
   <label for="address">Enter Address:</label>
-  <%= text_field_tag :address %>
+  <%= text_field_tag :address, nil, required: true %>
   <%= submit_tag "Submit" %>
 <% end %>
 
